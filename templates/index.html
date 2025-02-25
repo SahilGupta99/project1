@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script> 
+    <script defer src="/static/script.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+
+
+</head>
+<body class="bg-white">
+
+    <body class="bg-white flex flex-col min-h-screen">
+    
+        <!-- Navbar -->
+        <div id="navbar-container"></div>
+    
+        <!-- Main Content (Pushes Footer Down) -->
+        <main class="flex-1">
+            <div class="mt-10">
+                <img src="/static/banner.avif" alt="Banner Image" class="w-full max-h-[75vh] object-cover">
+            </div>
+    
+            <!-- Counter Section -->
+            <section class="bg-black text-white py-4">
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-center items-center scale-[0.8] md:scale-100">
+                    <div class="px-2">
+                        <h2 class="text-3xl md:text-4xl font-bold leading-none"><span class="counter" data-target="400">0</span>+</h2>
+                        <p class="text-lg md:text-xl">homes & cottages delivered</p>
+                    </div>
+                    <div class="px-2">
+                        <h2 class="text-3xl md:text-4xl font-bold leading-none"><span class="counter" data-target="250000">0</span>+</h2>
+                        <p class="text-lg md:text-xl">Sq Ft manufactured & assembled</p>
+                    </div>
+                    <div class="px-2">
+                        <h2 class="text-3xl md:text-4xl font-bold leading-none"><span class="counter" data-target="50">0</span>+</h2>
+                        <p class="text-lg md:text-xl">cities in India covered</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="text-center py-16">
+                <!-- Logo -->
+                <div class="mb-4">
+                    <img src="/static/logo.png" alt="Logo" class="mx-auto w-100 h-100">
+                </div>
+        
+                <!-- Small Title -->
+                <b><h1 class="text-orange-600 md:text-3xl font-bold tracking-wide uppercase">Our Commitment to You</h1></b>
+        
+                <!-- Main Heading -->
+                <h2 class="text-4xl md:text-5xl font-extrabold text-black mt-2">
+                    Proud to Provide All Type of Quality <br> Construction Services Since 2010
+                </h2>
+        
+                <!-- Features -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto mt-12 px-4">
+                    
+                    <!-- Urban Design -->
+                    <div class="text-center group">
+                        <div class="bg-gray-100 w-24 h-24 mx-auto flex items-center justify-center rounded-full transition-all duration-300 group-hover:bg-orange-500">
+                            <i class="fa-solid fa-file-pen text-4xl text-gray-700 transition-all duration-300 group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 transition-all duration-300 group-hover:text-orange-500">Urban Design</h3>
+                        <p class="text-gray-600 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+        
+                    <!-- Architecture Design -->
+                    <div class="text-center group">
+                        <div class="bg-gray-100 w-24 h-24 mx-auto flex items-center justify-center rounded-full transition-all duration-300 group-hover:bg-orange-500">
+                            <i class="fa-solid fa-layer-group text-4xl text-gray-700 transition-all duration-300 group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 transition-all duration-300 group-hover:text-orange-500">Architecture Design</h3>
+                        <p class="text-gray-600 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    </div>
+        
+                    <!-- Interior Design -->
+                    <div class="text-center group">
+                        <div class="bg-gray-100 w-24 h-24 mx-auto flex items-center justify-center rounded-full transition-all duration-300 group-hover:bg-orange-500">
+                            <i class="fa-solid fa-layer-group text-4xl text-gray-700 transition-all duration-300 group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 transition-all duration-300 group-hover:text-orange-500">Interior Design</h3>
+                        <p class="text-gray-600 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+        
+                </div>
+            </section>
+                
+    <!-- Scroll Progress Indicator -->
+    <div id="progressIndicator" class="progress-container" onclick="scrollToTop()">
+        <svg class="progress-ring" width="60" height="60">
+            <circle cx="30" cy="30" r="26" class="progress-circle-bg"></circle>
+            <circle id="progressCircle" class="progress-circle" cx="30" cy="30" r="26"></circle>
+        </svg>
+        <span id="progressText" class="progress-text">0%</span>
+    </div>
+        
+            <!-- Card Container -->
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto p-6">
+            </div>
+            
+            
+        <!-- Cards will be added here by JavaScript -->
+    </div>
+        </main>
+    
+        <!-- Footer -->
+        <div id="footer-container"></div>
+    
+    </body>
+    
+</body>
+</html>
+
